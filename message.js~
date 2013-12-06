@@ -1,0 +1,5 @@
+
+		function femmeetTic(){
+		   alert("fondation femme et tic!!!")
+		}
+	

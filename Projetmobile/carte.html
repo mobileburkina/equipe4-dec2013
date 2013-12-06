@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FasoTourisme</title>
+<!--mise en place d'un viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- lier la feuille de style -->
+<link rel="stylesheet" href="libs/jquery.mobile-1.3.2.css"/>
+<!--definir les library jquery -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="libs/jquery.ui.map.js"></script>
+
+
+
+</head>
+
+<body>
+    <div data-role="page" id="macarte">
+<!--la second page -->
+	<div data-role="header"><h2>deuxieme page</h2>
+	    <a href="index.html" data-icon="back" data-iconpos="notext"></a></div>
+	<div data-role="content"> contenu de la deuxieme page: information!!!!!!!
+       </div>
+	<div id="macarte" style="width: 100% height: 250px">
+		<script type="text/javascript">
+		$(document).ready(
+			function(){
+				     var malocalisation = new google.maps.LatLng(20, -10);
+					$('#macarte').gmap({'center':malocalisation, 'zoom': 10});
+									
+				     $('#macarte').gmap('addMarker',{'position': malocalisattion, 'bounds': true});
+				    }
+				);
+		</script>
+	</div>
+  <div data-role="footer"><h4>copyright &copy;</h4> </div>
+
+</div>
+</body>
+
+</html>
+

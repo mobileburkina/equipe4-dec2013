@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulaire</title>
+<!--mise en place d'un viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- lier la feuille de style -->
+<link rel="stylesheet" href="libs/jquery.mobile-1.3.2.css"/>
+<!--definir les library jquery -->
+<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="formulaire">
+<!--la second page -->
+	<div data-role="header"><h2>Saisir vos cordonnees</h2>
+	    <a href="index.html" data-icon="back" data-iconpos="notext"></a></div>
+	<div data-role="content"> 
+		<form action="" methode="post">
+			<div data-role="fieldset" id="saisie">
+			<label for="txtnom">Nom: </label>
+			<input type="text" name="txtnom" id="txtnom" required />	
+			<label for="txtprenom">Prenom: </label>
+			<input type="text" name="txtprenom" id="txtprenom" required placeholder="saisir votre prenom"/>
+			<label for="txtage">Age: </label>
+			<input type="number" name="txtage" id="txtage" placeholder="age" />
+			<label for="txtage">Email: </label>
+			<input type="email" name="txtmail" id="txtmail" placeholder="toto@toto.net" />
+	
+			</div>
+			<div data-role="fieldset" id="bouton">
+				<input type="submit" name="buttonsave" value="Save" />
+				<input type="submit" name="buttoncancel" value="Cancel" />
+			</div>
+		</form>
+       </div>
+  <div data-role="footer"><h4>copyright &copy;</h4> </div>
+
+</div>
+</body>
+
+</html>
+

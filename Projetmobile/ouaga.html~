@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--place des viewport, feuilles de style et les librairies jquery-->
+<title>FasoTourisme</title>
+<!--mise en place d'un viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- lier la feuille de style -->
+<link rel="stylesheet" href="libs/jquery.mobile-1.3.2.css"/>
+<!--definir les library jquery -->
+<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageprincipale">
+	<!--ceci est une page à divisé entrois parties-->
+	<div data-role="header">
+		
+	<!--entète de la page-->
+		<h1> Sites Touristiques</h1>
+	</div>
+	<div data-role="content">
+		<!--contenu de la page-->
+		<p> Retrouver tous les sites touristiques de Ouagadougou</p>
+	<!--ceci est un  button-->
+		<!--<a href=# data-role="button" data-icon="search" data-theme="b">choisissez</a>-->
+		<ul data-role="listView" data-inset=true data-filter=true>
+			<li><a href="information.html" data-transition="flip">Parc Bangre weoogo</a></li>
+
+			<li><a href="#">Musee nationale</a></li>
+			<li><a href="cascade.html"data-transition="slidedown">Maison artisanale</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+	<div data-role="footer">
+	<!--pied de page-->
+		<h4>copyright@groupe4 &copy;</h4>
+	</div>
+</div>
+
+
+</body>
+
+</html>
+
